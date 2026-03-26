@@ -1,0 +1,147 @@
+/* CSS for the Sign Up Form */
+/* This file contains styles for the registration form, making it visually appealing and responsive. */
+
+/* Reset default margins and padding for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles: Sets the overall layout and background */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean, readable font */
+  background-color: #f4f4f4; /* Light gray background for better contrast */
+  color: #333; /* Dark text color for readability */
+  padding: 20px; /* Adds space around the content */
+  display: flex; /* Uses flexbox for centering */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures the body takes full viewport height */
+}
+
+/* Heading styles */
+h1 {
+  color: #d9534f; /* Red color for emphasis */
+  margin-bottom: 10px; /* Space below the heading */
+  text-align: center; /* Centers the text */
+}
+
+/* Paragraph styles */
+p {
+  color: #d9534f; /* Matches the heading color */
+  margin-bottom: 20px; /* Space below the paragraph */
+  text-align: center; /* Centers the text */
+}
+
+/* Form container styles */
+#signup-form {
+  background-color: #5cb85c; /* Green background for the form */
+  color: #fff; /* White text for contrast */
+  padding: 25px; /* Internal spacing */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%; /* Full width on small screens */
+  max-width: 500px; /* Limits width on larger screens */
+}
+
+/* Form group styles: Each input group */
+.form-group {
+  margin-bottom: 15px; /* Space between groups */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Stacks label and input vertically */
+}
+
+/* Label styles */
+label {
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Makes labels stand out */
+}
+
+/* Input and select styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+  padding: 10px; /* Internal spacing */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Readable font size */
+  width: 100%; /* Full width within container */
+}
+
+/* Radio button group styles */
+.radio-group {
+  display: flex; /* Horizontal layout for radio buttons */
+  gap: 10px; /* Space between options */
+  align-items: center; /* Aligns items vertically */
+}
+
+/* Button styles */
+button[type="submit"] {
+  background-color: #337ab7; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Removes default border */
+  padding: 10px 20px; /* Internal spacing */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor on hover */
+  font-size: 16px; /* Readable font size */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Space above */
+}
+
+button[type="submit"]:hover {
+  background-color: #286090; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px; /* Space above footer */
+  color: #777; /* Gray text */
+  text-align: center; /* Centers the text */
+  font-size: 14px; /* Smaller font size */
+}
+
+/* Media Queries for Responsiveness */
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduces padding on smaller screens */
+  }
+
+  #signup-form {
+    padding: 20px; /* Adjusts form padding */
+    max-width: 100%; /* Allows full width on small screens */
+  }
+
+  .radio-group {
+    flex-direction: column; /* Stacks radio buttons vertically on small screens */
+    align-items: flex-start; /* Aligns to the left */
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Smaller heading on mobile */
+  }
+
+  p {
+    font-size: 14px; /* Smaller paragraph text */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    font-size: 14px; /* Smaller input text */
+  }
+
+  button[type="submit"] {
+    font-size: 14px; /* Smaller button text */
+  }
+}
