@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- The DOCTYPE declaration defines the document type and version of HTML. It's essential for the browser to render the page correctly. -->
+<html lang="en">
+  <!-- The <html> element is the root element of the HTML document. The lang attribute specifies the language of the document, which is important for accessibility and search engines. -->
+  <head>
+    <!-- The <head> element contains meta-information about the document, such as title, character encoding, and links to stylesheets. -->
+    <meta charset="UTF-8" />
+    <!-- The charset meta tag specifies the character encoding for the document. UTF-8 is the standard encoding that supports all characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The viewport meta tag ensures the page is responsive on mobile devices by controlling the layout viewport. -->
+    <title>Form for Registration</title>
+    <!-- The <title> element sets the title of the document, which appears in the browser tab. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- The <link> element links an external CSS file to style the HTML document. -->
+  </head>
+  <body>
+    <!-- The <body> element contains the visible content of the HTML document. -->
+    <h1>This is a sign up form</h1>
+    <!-- The <h1> element is the main heading of the page. It should be used once per page for the primary topic. -->
+    <p>Kindly fill the form below</p>
+    <!-- The <p> element defines a paragraph of text. Note: Corrected spelling from "Kndly" to "Kindly". -->
+
+    <form action="#" method="post" id="signup-form">
+      <!-- The <form> element creates a form for user input. The action attribute specifies where to send the form data (using "#" as a placeholder). The method attribute specifies the HTTP method (post for sending data). The id attribute provides a unique identifier for styling or scripting. -->
+
+      <div class="form-group">
+        <!-- A <div> element is used as a container to group related elements. The class attribute allows for CSS styling. -->
+        <label for="full-name">Full Name</label>
+        <!-- The <label> element provides a label for form controls. The for attribute associates it with the input element's id. -->
+        <input
+          type="text"
+          id="full-name"
+          name="full-name"
+          placeholder="Surname first"
+          required
+        />
+        <!-- The <input> element creates an input field. Type="text" specifies a text input. The id and name attributes are used for association and form submission. The placeholder provides hint text. The required attribute makes the field mandatory. -->
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <!-- Type="email" provides validation for email format. -->
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+234...."
+          required
+        />
+        <!-- Type="tel" is for telephone numbers, which can trigger appropriate keyboards on mobile devices. -->
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter 8-digit PIN"
+          required
+        />
+        <!-- Type="password" masks the input for security. -->
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+        <!-- Type="date" provides a date picker. -->
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <!-- For radio buttons, the label can be associated with each input individually. -->
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <!-- Radio buttons with the same name attribute are grouped, allowing only one selection. -->
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <select id="age" name="age" required>
+          <!-- The <select> element creates a dropdown list. -->
+          <option value="">Select Age</option>
+          <!-- The first option is often a placeholder. -->
+          <option value="13">13</option>
+          <option value="15">15</option>
+          <option value="18+">18 and Above</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I agree to the terms and conditions</label>
+        <!-- Checkbox for agreement. -->
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <!-- The <button> element creates a clickable button. Type="submit" submits the form. -->
+    </form>
+
+    <footer>&copy; Olalekan Toheeb Olakunle</footer>
+    <!-- The <footer> element defines footer content for the document or section. -->
+  </body>
+</html>
